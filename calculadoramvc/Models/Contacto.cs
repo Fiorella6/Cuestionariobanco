@@ -28,17 +28,23 @@ namespace calculadoramvc.Models
         public String Email { get; set; }
 
         [DataType(DataType.PhoneNumber)]
-        [Display(Name="Telefono")]
-        [Column("phone")]
-        public int Phone { get; set; }
+        [Display(Name="Edad")]
+        [Column("Age")]
+        public int Age { get; set; }
 
-        [Display(Name="Titulo")]
+        [Display(Name="Distrito")]
         [Column("subject")]
         public String Subject { get; set; }
 
-        [Display(Name="Mensaje")]
-        [Column("message")]
-        public String Message { get; set; }
+        [Display(Name="Banco")]
+        [Column("banco")]
+
+        public String banco { get; set; }
+
+        [Display(Name="genero")]
+        [Column("genero")]
+        public String genero { get; set; }
+
 
         [NotMapped]
         public String Response { get; set; }
